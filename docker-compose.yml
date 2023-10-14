@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  medicineproject.placeservice:
+    image: ${DOCKER_REGISTRY-}medicineprojectplaceservice
+    build:
+      context: .
+      dockerfile: MedicineProject.PlaceService/Dockerfile
